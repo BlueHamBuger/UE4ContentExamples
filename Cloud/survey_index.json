@@ -1,0 +1,9 @@
+{
+	"surveys":
+	[
+		"interactive_tutorial_survey.json",
+		"InEditorBasicsTutorial.json",
+		"InEditorBPTutorial.json",
+		"InEditorGamifiedBasicsTutorial.json"
+	]
+}
