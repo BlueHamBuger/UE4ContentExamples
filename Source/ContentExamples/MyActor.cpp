@@ -15,7 +15,7 @@ AMyActor::AMyActor()
 void AMyActor::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	//testerInterface.SetObject()
 }
 
 // Called every frame
@@ -23,5 +23,10 @@ void AMyActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void AMyActor::SelectACamera_Implementation(UPARAM(ref) TScriptInterface<IDlgDialogueParticipant>& selectedCamera)
+{
+	UE_LOG(LogTemp,Warning,TEXT("%s"),*selectedCamera->Execute_GetParticipantName(selectedCamera.GetObject()).ToString());
 }
 
